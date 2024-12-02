@@ -18,7 +18,7 @@ const { post } = Astro.props;
   description={post.data.description}
 >
   <div class='flex justify-end my-4'>
-    <Button href={`/apparent-apogee/blog/${post.slug}/`}>Read post &rarr;</Button>
+    <Button color="#E9B5C0" href={`/apparent-apogee/blog/${post.slug}/`}>Read post &rarr;</Button>
   </div>
 
   <div class='hidden sm:inline-block'>
@@ -29,8 +29,8 @@ const { post } = Astro.props;
           post.data.tags.map((tag) => {
             return (
               <li>
-                <a class="sanchez" href={`/apparent-apogee/blog/tags/${tag.toLowerCase()}/`}>
-                  <Pill>{tag}</Pill>
+                <a class="sanchez">
+                  <Pill color='#B2DADA'>{tag}</Pill>
                 </a>
               </li>
             );
