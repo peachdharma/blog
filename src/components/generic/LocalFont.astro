@@ -3,7 +3,6 @@ import { join } from "node:path";
 import { AstroFont } from "astro-font";
 
 const appDir = process.cwd();
-const getFontPath = (name: string) => join(appDir, "public", "fonts", name);
 ---
 
 <AstroFont
@@ -16,7 +15,7 @@ const getFontPath = (name: string) => join(appDir, "public", "fonts", name);
       src: [
         {
           style: "normal",
-          path: getFontPath("outfit.ttf"),
+          path: "apparent-apogee/fonts/outfit.ttf",
         },
       ],
     },
@@ -29,7 +28,7 @@ const getFontPath = (name: string) => join(appDir, "public", "fonts", name);
         {
           preload: false,
           style: "normal",
-          path: getFontPath("poppins.ttf"),
+          path: "apparent-apogee/fonts/poppins.ttf",
         },
       ],
     },
@@ -42,7 +41,7 @@ const getFontPath = (name: string) => join(appDir, "public", "fonts", name);
         {
           preload: false,
           style: "normal",
-          path: getFontPath("righteous.ttf"),
+          path: "apparent-apogee/fonts/righteous.ttf",
         },
       ],
     },
@@ -55,7 +54,7 @@ const getFontPath = (name: string) => join(appDir, "public", "fonts", name);
         {
           preload: false,
           style: "normal",
-          path: getFontPath("sanchez.ttf"),
+          path: "apparent-apogee/fonts/sanchez.ttf",
         },
       ],
     },
@@ -68,7 +67,7 @@ const getFontPath = (name: string) => join(appDir, "public", "fonts", name);
         {
           preload: false,
           style: "normal",
-          path: getFontPath("dm-serif.ttf"),
+          path: "apparent-apogee/fonts/dm-serif.ttf",
         },
       ],
     },
