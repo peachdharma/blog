@@ -8,7 +8,7 @@ export default defineConfig({
 
   // used to generate images
   site: 'https://maaz-selia.github.io',
-  base: '/apparent-apogee',
+  base: '/blog',
   trailingSlash: 'ignore',
   integrations: [sitemap(), UnoCSS({ injectReset: true })],
   vite: {
